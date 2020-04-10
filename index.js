@@ -7,8 +7,10 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'pug')
 app.use(express.static('public'))
 
+// Modules
 const home = require('./routes/home')
 
+// Routes
 app.get('/', home)
 
 app.listen(port, (err) =>{
