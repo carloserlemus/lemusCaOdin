@@ -1,45 +1,66 @@
 doctype html
 head
-    title CERL
-    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
-    style.
-        .container-fluid {
-            padding-right:0px;
-            padding-left:0px;
-            margin-right:auto;
-            margin-left:auto
-        }
-body
-    .container-fluid
-        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-            a.navbar-brand(href='#') Carlos E.R. LEMUS
-            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #navbarNavAltMarkup.collapse.navbar-collapse
-                .navbar-nav
-                    a.nav-item.nav-link.active(href='#')
-                        | Home 
-                        span.sr-only (current)
-                    a.nav-item.nav-link(href='#') Programming
-                    a.nav-item.nav-link(href='#') Graphics
-                    a.nav-item.nav-link(href='#') Blog
-                    //- a.nav-item.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
-                    
-        #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
-            .carousel-inner(role='listbox' style='max-width:900px; max-height:600px !important;')
-                .carousel-item.active
-                    img.d-block.w-100(src='https://img1.looper.com/img/gallery/the-untold-truth-of-silver-surfer/intro-1523280925.jpg' alt='...')
-                .carousel-item
-                    img.d-block.w-100(src='https://i0.wp.com/www.comicbookwire.com/wp-content/uploads/2019/10/Marvel-Masterworks-Silver-Surfer-v1.jpg?resize=742%2C445&ssl=1' alt='...')
-                .carousel-item
-                    img.d-block.w-100(src='https://img1.looper.com/img/gallery/the-untold-truth-of-silver-surfer/intro-1523280925.jpg' alt='...')
-            a.carousel-control-prev(href='#carouselExampleFade' role='button' data-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.sr-only Previous
-            a.carousel-control-next(href='#carouselExampleFade' role='button' data-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.sr-only Next
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Carlos
+  // Bootstrap core CSS
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
 
-    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
-    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
-    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
+  style.
+    ul {
+        text-align: center;
+        list-style: inside;
+    }
+    li {
+        list-style-type: none;
+    }
+
+// Navigation
+nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  .container
+    a.navbar-brand.js-scroll-trigger(href='#page-top') Carlos E.R. LEMUS
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#home') Home
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#home') Blog
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#home') Graphics
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#home') Programming
+
+section#home
+  .container
+    .row
+      .col-lg-8.mx-auto
+        h1 Home
+        p.lead
+          | Welcome to Carlos' stupid website, lol!
+
+footer.bg-dark.fixed-bottom
+        ul.justify-content-center.row
+            li
+                a(href='#')
+                    img.logo(src='https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png')
+            li
+                a(href='#')
+                    img.logo(src='https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png')
+            li
+                a(href='#')
+                    img.logo(src='https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png')
+            li
+                a(href='#')
+                    img.logo(src='https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_google_plus-128.png')
+
+
+// Bootstrap core JavaScript
+script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
+
+script(src='public/js/scrolling-nav.js')
